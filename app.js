@@ -6,7 +6,7 @@ const bodyParser = require( 'body-parser' );
 const morgan = require( 'morgan' );
 const usersRoute = require('./src/routers/user');
 const postRoute = require('./src/routers/post')
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 const uri = "mongodb+srv://admin:1234567890@cluster0.s11is.mongodb.net/socialmedia?retryWrites=true&w=majority";
 
 
@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'production') {
 //server Run on port 3000
 app.listen( port, ( err ) => {
   if ( err ) { console.error( err ); }
-  console.log( 'Listening on 5000' );
+  console.log( 'Listening on 3000' );
 } );
 
 // Use connect method to connect to the server
